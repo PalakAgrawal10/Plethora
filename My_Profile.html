@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Order your food with CaterWay and get heavy Discounts.Order from your favorite restaurants & track on the go, with the all-new CaterWay app."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plethora</title>
+    <link rel="icon" href="icon1.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&family=Kufam&family=Montserrat:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/41af37f081.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <style>
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      border: none;
+      border-bottom: 2px solid #fcc844;
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    label {
+      color: black;
+      font-size: 16px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #fcc844;
+      color: #fff;
+      border-radius: 5px;
+      font-family: "Open Sans", sans-serif;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #fcc844;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input:focus {
+      outline: none;
+      border-bottom: 2px solid #ff9800;
+    }
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 600px) {
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <body>
+    <section id="title">
+      <div class="container-fluid" style="padding: 5% 25% 10% 25%">
+        <!-- Nav Bar -->
+
+        <nav
+          class="navbar fixed-top navbar-expand navbar-light"
+          style="background-color: white"
+        >
+          <a class="navbar-brand" href="home1.html">Plethora</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="sports.html"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 1.2rem;
+                    color: black;
+                  "
+                >
+                  Sports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="technical.html"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 1.2rem;
+                    color: black;
+                  "
+                >
+                  Technical
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="cultural.html"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 1.2rem;
+                    color: black;
+                  "
+                >
+                  Cultural
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="others.html"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 1.2rem;
+                    color: black;
+                  "
+                >
+                  Others
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="contact.html"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 1.2rem;
+                    color: black;
+                  "
+                >
+                  Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="login.html"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 1.2rem;
+                    color: black;
+                  "
+                >
+                  Log in
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div>
+          <h1
+            style="
+              text-align: center;
+              color: #290001;
+              font-family: Cuprum;
+              padding-bottom: 3%;
+            "
+          >
+            User Profile
+          </h1>
+          <form id="user-profile-form">
+            <div class="row">
+              <div class="col s12 m8">
+                <img
+                  src="placeholder img.png"
+                  alt="Profile Picture"
+                  class="profile-picture"
+                />
+                <div class="file-field input-field"> 
+                    <input
+                      type="file"
+                      id="profile-picture-input"
+                      name="profile-picture"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="first-name-input"
+                    name="first-name"
+                    class="validate"
+                    value="Stephen"
+                    required
+                  />
+                  <label for="first-name-input">First Name</label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="last-name-input"
+                    name="last-name"
+                    class="validate"
+                    value="Strange"
+                    required
+                  />
+                  <label for="last-name-input">Last Name</label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="roll-number-input"
+                    name="roll-number"
+                    class="validate"
+                    value="123456"
+                    required
+                  />
+                  <label for="roll-number-input">Roll Number</label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="email"
+                    id="email-input"
+                    name="email"
+                    class="validate"
+                    value="stephenstrange@example.com"
+                    required
+                  />
+                  <label for="email-input">Email ID</label>
+                </div>
+                <div class="input-field">
+                  <select
+                    multiple
+                    id="events-registered-input"
+                    name="events-registered[]"
+                    required
+                  >
+                    <option value="Event 1">Event 1</option>
+                    <option value="Event 2">Event 2</option>
+                    <option value="Event 3">Event 3</option>
+                  </select>
+                  <label for="events-registered-input">Events Registered</label>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn waves-effect waves-light"
+              type="button"
+              style="margin-left: 10px;background-color: #fcc844;margin-left: 75%;"
+              onclick="window.history.back()"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="row">
+        <div
+          class="footer col-lg-2 col-md-6 col-sm-6 col-xs-6 col-6"
+          style="padding-left: 2%"
+        >
+          <h3 style="color: white; font-family: Cuprum; font-size: 1.75rem">
+            Plethora
+          </h3>
+          <p class="end1"><a class="end-link1" href="home1.html">Home</a></p>
+          <p class="end1">
+            <a class="end-link1" href="myaccount.html">My Account</a>
+          </p>
+          <p class="end1"><a class="end-link1" href="login.html">Login</a></p>
+          <p class="end1">
+            <a class="end-link1" href="contact.html">Contact Us</a>
+          </p>
+        </div>
+        <div
+          class="footer col-lg-2 col-md-6 col-sm-6 col-xs-6 col-6"
+          style="padding-left: 2%"
+        >
+          <h3 style="color: white; font-family: Cuprum; font-size: 1.75rem">
+            Events
+          </h3>
+          <p class="end1"><a class="end-link1" href="sports.html">Sports</a></p>
+          <p class="end1">
+            <a class="end-link1" href="technical.html">Technical</a>
+          </p>
+          <p class="end1">
+            <a class="end-link1" href="cultural.html">Cultural</a>
+          </p>
+          <p class="end1"><a class="end-link1" href="others.html">Others</a></p>
+        </div>
+        <div
+          class="footer col-lg-2 col-md-6 col-sm-6 col-xs-6 col-6"
+          style="padding-left: 3%"
+        >
+          <h3 style="color: white; font-family: Cuprum; font-size: 1.75rem">
+            Learn
+          </h3>
+          <p class="end1"><a class="end-link1" href="">FAQs</a></p>
+          <p class="end1"><a class="end-link1" href="">Gallery</a></p>
+          <p class="end1">
+            <a class="end-link1" href="contact.html">Contact</a>
+          </p>
+        </div>
+        <div class="footer col-lg-1" style="padding-left: 3%"></div>
+        <div class="col-lg-4">
+          <section id="newsletter-form">
+            <div class="row nl">
+              <form action="mailto:palakagrawal820601@gmail.com" method="post">
+                <div class="row">
+                  <div>
+                    <h3
+                      class="footer"
+                      style="
+                        color: white;
+                        text-align: center;
+                        font-family: Cuprum;
+                        font-size: 1.75rem;
+                      "
+                    >
+                      Subscribe to our Newsletter
+                    </h3>
+                    <p></p>
+                  </div>
+                  <div>
+                    <input
+                      class="placeholder"
+                      type="text"
+                      id="usrname"
+                      name="usrname"
+                      placeholder="xyz@gmail.com"
+                      required
+                    />
+                    <div id="emailHelp" style="color: #290001">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                </div>
+                <br />
+
+                <div class="col-lg-7 col-md-4 col-sm-4 col-xs-4 col-8">
+                  <div>
+                    <input class="submit-1" type="submit" value=" Subscribe " />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <a href="" style="padding-top: 0; display: inline"
+          ><i class="social-icon fab fa-facebook-f fa-2x"></i
+        ></a>
+        <a href="" style="padding-top: 0; display: inline"
+          ><i class="social-icon fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="" style="padding-top: 0; display: inline"
+          ><i class="social-icon fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="" style="padding-top: 0; display: inline"
+          ><i class="social-icon fas fa-envelope fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+    <section id="copyright">
+      <div>
+        <p style="color: #fff">© Copyright 2021 Plethora</p>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize Materialize components
+        $("select").formSelect();
+
+        // Submit form data using AJAX
+        $("#user-profile-form").submit(function (event) {
+          event.preventDefault();
+          $.ajax({
+            type: "POST",
+            url: "save-user-profile.php",
+            data: $(this).serialize(),
+            success: function (response) {
+              // Display success message
+              alert("Changes saved successfully!");
+            },
+            error: function (xhr, status, error) {
+              // Display error message
+              alert("An error occurred while saving changes.");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
