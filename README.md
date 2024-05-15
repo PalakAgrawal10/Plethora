@@ -1,3 +1,1 @@
----
-permalink: /home1.html
----
+Plethora
